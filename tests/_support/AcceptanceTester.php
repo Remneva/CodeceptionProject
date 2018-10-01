@@ -65,19 +65,8 @@ namespace {
             $this->fillField($arg1, $arg2);
         }
 
-        /**
-         * @Then пользователь делает запрос в базу данных :arg1
-         */
-        public function step_Select($arg1)
-        {
-            $this->seeInDatabase('tasks',['status >' => '0']);
-            //throw new \Codeception\Exception\Incomplete("Step `пользователь делает запрос в базу данных :arg1` is not defined");
-        }
-
-
     }
 
-   // use Trait DataTesterActions,
 }
 
 

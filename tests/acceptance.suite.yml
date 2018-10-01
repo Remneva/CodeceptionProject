@@ -18,21 +18,22 @@ modules:
       url: 'http://test.fabrikant.ru/'
       browser: 'chrome'
   - \Helper\Acceptance
+  - \Helper\DbHelper
   - Db:
-      dsn: 'mysql:host=127.0.0.1;port=3306;dbname=mytab'
-      user: 'root'
-      password: '123456'
-#      dump: 'tests/_data/dump.sql'
-#      populate: true
-#      cleanup: true
-#      reconnect: true
-#      waitlock: 10
-#      populator: 'mysql -u $user -h $host $dbname < $dump'
-#      ssl_key: '/path/to/client-key.pem'
-#      ssl_cert: '/path/to/client-cert.pem'
-#      ssl_ca: '/path/to/ca-cert.pem'
-#      ssl_verify_server_cert: false
-#      ssl_cipher: 'AES256-SHA'
+      dsn: 'mysql:host=10.31.82.51;port=3306;dbname=accreditation'
+      user: 'services'
+      password: 'Cdte8cVr7RhHQWdq'
+  #      dump: 'tests/_data/dump.sql'
+  #      populate: true
+  #      cleanup: true
+  #      reconnect: true
+  #      waitlock: 10
+  #      populator: 'mysql -u $user -h $host $dbname < $dump'
+  #      ssl_key: '/path/to/client-key.pem'
+  #      ssl_cert: '/path/to/client-cert.pem'
+  #      ssl_ca: '/path/to/ca-cert.pem'
+  #      ssl_verify_server_cert: false
+  #      ssl_cipher: 'AES256-SHA'
   config:
     WebDriver:
       url: 'http://test.fabrikant.ru/'
@@ -42,3 +43,9 @@ databaseEnabled: true
 webdriver.remote.quietExceptions: true
 
 pageload_timeout: 5
+
+gherkin:
+  contexts:
+    default:
+         - AcceptanceTester
+         - Step\Acceptance\DataTester

@@ -10,6 +10,4 @@ modules:
     enabled:
     - PhpBrowser:
           url: http://test.fabrikant.ru
-          - Db:
-                dsn: "mysql:host=localhost;dbname=mytab"
-          - Filesystem
+    - Filesystem

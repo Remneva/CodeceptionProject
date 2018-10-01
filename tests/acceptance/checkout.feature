@@ -11,4 +11,6 @@
     И пользователь заполняет поле "//input[@id='f_login']" значением "fabrikant"
     И пользователь заполняет поле "//input[@id='f_password']" значением "123456"
     И нажимает на кнопку "//button[@id='signinButton']"
-    И пользователь делает запрос в базу данных "Select * from tasks"
+    И пользователь делает запрос в базу данных accreditations и проверяет значение "test" в колонке name
+   // И пользователь выполняет запрос в базу данных accreditations "UPDATE accreditations SET 'name' = 'procrastinating' WHERE 'duration_count' = 5 and 'name' = 'test2')"
+
