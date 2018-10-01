@@ -70,8 +70,8 @@ namespace {
          */
         public function step_Select($arg1)
         {
-            $this->seeInDatabase($arg1);
-            throw new \Codeception\Exception\Incomplete("Step `пользователь делает запрос в базу данных :arg1` is not defined");
+            $this->seeInDatabase('tasks',['status >' => '0']);
+            //throw new \Codeception\Exception\Incomplete("Step `пользователь делает запрос в базу данных :arg1` is not defined");
         }
 
 

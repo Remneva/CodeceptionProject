@@ -16789,9 +16789,9 @@
 			<li class="onlyMobile showDialog" data-dialog="signupDialog"><a href="/personal/registration/">Зарегистрироваться</a></li>
 	</ul>
 
-		<div class="datetime-block" data-current-time="1538303372000">
-			<span class="date-string"> 30 сентября, ВС,  </span>
-			<span class="clock-string"> 10:29 </span>
+		<div class="datetime-block" data-current-time="1538375555000">
+			<span class="date-string"> 1 октября, ПН,  </span>
+			<span class="clock-string"> 6:32 </span>
 			<div class="timezone">время московское</div>
 		</div>
 
@@ -16930,7 +16930,7 @@
 <section class="clients">
 	<div class="innerGrid">
 	<div class="container">
-		<div class="lSSlideOuter "><div class="lSSlideWrapper usingCss" style="transition-duration: 600ms; transition-timing-function: ease;"><ul id="clients" class="lightSlider lSSlide" style="width: 3960px; transform: translate3d(-1980px, 0px, 0px); height: 63px; padding-bottom: 0%;"><li class="clone left" style="width: 980px; margin-right: 10px;">
+		<div class="lSSlideOuter "><div class="lSSlideWrapper usingCss" style="transition-duration: 600ms; transition-timing-function: ease;"><ul id="clients" class="lightSlider lSSlide" style="width: 3960px; transform: translate3d(-990px, 0px, 0px); height: 63px; padding-bottom: 0%;"><li class="clone left" style="width: 980px; margin-right: 10px;">
 					<a href="/trades/procedure/search/?query=Росатом&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rosat_c.png" /></a>
 					<a href="/trades/procedure/search/?query=Русагро&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rusagr_c.png" /></a>
 					<a href="/trades/procedure/search/?query=Русал&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rusal_c.png" /></a>
@@ -16939,14 +16939,14 @@
 						<img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/pochta_bank.png" />
 					</a>
 				</li>
-				<li class="lslide" style="width: 980px; margin-right: 10px;">
+				<li class="lslide active" style="width: 980px; margin-right: 10px;">
 					<a href="/trades/procedure/search/?query=РЖД&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rzd_c.png" /></a>
 					<a href="/trades/procedure/search/?type=0&amp;query=Гознак"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/gznak_c.png" /></a>
 					<a href="/trades/procedure/search/?query=Норникель&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/nornik_c.png" /></a>
 					<a href="/trades/procedure/search/?query=ОРКК&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/orkk_c.png" /></a>
 					<a href="/trades/procedure/search/?query=ОСК&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/osk_c.png" /></a>
 				</li>
-				<li class="lslide active" style="width: 980px; margin-right: 10px;">
+				<li class="lslide" style="width: 980px; margin-right: 10px;">
 					<a href="/trades/procedure/search/?query=Росатом&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rosat_c.png" /></a>
 					<a href="/trades/procedure/search/?query=Русагро&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rusagr_c.png" /></a>
 					<a href="/trades/procedure/search/?query=Русал&amp;type=0&amp;date_type=date_publication&amp;currency=0"><img src="//content-test.fabrikant.ru/r2-195/themes/fabrikant20-main/media/images/clients/rusal_c.png" /></a>
@@ -17119,20 +17119,20 @@
 		<a href="/#registration" class="switch showDialog" data-dialog="signupDialog">Регистрация</a>
 
 		<form action="/personal/login/signin/" id="signin" class="opened">
-			<fieldset class="required onlyOnSubmit">
+			<fieldset class="required onlyOnSubmit error">
 				<label>
 					<input type="text" id="f_login" name="f_login" placeholder="Логин" />
 				</label>
 				<label>
 					<input type="password" id="f_password" name="f_password" placeholder="Пароль" />
 				</label>
-								<span class="errorMsg">Неверная пара: логин и пароль</span>
+								<span class="errorMsg" style="margin-top: -22px;">Неверное имя пользователя или пароль</span>
 			</fieldset>
 			<a href="/#recovery_password" class="forgot showDialog" data-dialog="recoverDialog">Забыли пароль?</a>
 			<a href="/personal/login/sign/" class="epEnter">Войти по ЭП</a>
 			<fieldset class="buttons">
 				<button type="reset" class="close">Отмена</button>
-				<button type="submit" id="signinButton">Войти</button>
+				<button type="submit" id="signinButton" disabled="">Войти</button>
 			</fieldset>
 		</form>
 	</div>
