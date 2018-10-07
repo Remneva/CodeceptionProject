@@ -19,10 +19,14 @@ modules:
       browser: 'chrome'
   - \Helper\Acceptance
   - \Helper\DbHelper
-  - Db:
-      dsn: 'mysql:host=10.31.82.51;port=3306;dbname=accreditation'
-      user: 'services'
-      password: 'Cdte8cVr7RhHQWdq'
+
+
+#  - Db:
+#      dsn: 'mysql:host=10.31.82.51;port=3306;dbname=accreditation'
+#      user: 'services'
+#      password: 'Cdte8cVr7RhHQWdq'
+
+
   #      dump: 'tests/_data/dump.sql'
   #      populate: true
   #      cleanup: true
@@ -49,3 +53,7 @@ gherkin:
     default:
          - AcceptanceTester
          - Step\Acceptance\DataTester
+
+extensions:
+  enabled:
+#    - Codeception\Extension\Recorder
